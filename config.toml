@@ -1,0 +1,74 @@
+theme = "ghd"
+
+[editor]
+line-number = "relative"
+cursorline = true
+mouse = false
+scrolloff = 10
+color-modes = true
+rulers = []
+auto-completion = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+tab= "-"
+tabpad = "-"
+
+[editor.lsp]
+display-messages = true
+
+[editor.statusline]
+left = ["mode", "spacer", "spinner", "spacer", "file-name"]
+right = ["diagnostics", "selections", "position-percentage", "position", "file-encoding", "file-type"]
+separator = "│"
+
+[keys.normal]
+Y = ["yank_main_selection_to_clipboard"]
+0 = ["goto_line_start"]
+G = ["goto_last_line"]
+X = ["extend_line_above"]
+
+# Arrow keys nav buffers
+left = ["goto_previous_buffer"]
+down = ["goto_previous_buffer"]
+up = ["goto_next_buffer"]
+right = ["goto_next_buffer"]
+
+# Ctr + Char nav in window mode
+C-h = ["jump_view_left"]
+C-j = ["jump_view_down"]
+C-k = ["jump_view_up"]
+C-l = ["jump_view_right"]
+C-q = ["wclose"]
+
+[keys.normal._]
+# Leader (underscore) + Char
+r = ":set rulers [80]"
+R = ":set rulers []"
+t = ":insert-output date"
+p = ":insert-output pwgen -cnys 35 1"
+f = ":format"
+c = ["kill_to_line_end", "insert_mode"]
+d = ["kill_to_line_end"]
+l = ":insert-output sh ~/Projects/twilight.zone/coding/bash/lorem.sh"
+
+[keys.normal.g]
+q = [":reflow 80", "goto_line_start"]
+
+[keys.insert]
+
+[keys.select]
+Y = ["yank_main_selection_to_clipboard"]

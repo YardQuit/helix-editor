@@ -1,0 +1,111 @@
+# Author: YardQuit
+
+# Syntax highlighting
+"attribute" = { fg = "ghd_yellow" }
+"comment" = { fg = "ghd_gray" }
+"constant" = { fg = "ghd_light_blue" }
+"constructor" = { fg = "ghd_orange" }
+"condtant.builtin.boolean" = { fg = "ghd_light_blue" }
+"constant.character.escape" = { fg = "ghd_yellow" }
+"constant.character.numeric.integer" = { fg = "ghd_light_blue" }
+"constant.character.numeric.float" = { fg = "ghd_light_blue" }
+"function" = { fg = "ghd_purple" }
+"function.builtin" = { fg = "ghd_purple" }
+"function.method" = { fg = "ghd_light_green" }
+"function.macro" = { fg = "ghd_yellow" }
+"keyword" = { fg = "ghd_red" }
+"keyword.control.conditional" = { fg = "ghd_red" }
+"keyword.control.repeat" = { fg = "ghd_red" }
+"keyword.control.import" = { fg = "ghd_red" }
+"keyword.operator" = { fg = "ghd_blue" }
+"keyword.function" = { fg = "ghd_red" }
+"keyword.exception" = { fg = "ghd_red" }
+"keyword.return" = { fg = "ghd_red" }
+"operator" = { fg = "ghd_white" } #####
+"punctuation" = { fg = "ghd_white" }
+"punctuation.delimiter" = { fg = "ghd_white" }
+"punctuation.bracket" = { fg = "ghd_light_green" }
+"punctuation.special" = { fg = "ghd_yellow" }
+"string" = { fg = "ghd_bright_blue" }
+"string.special" = { fg = "ghd_bright_blue" }
+"string.regexp" = { fg = "ghd_yellow" }
+"storage" = { fg = "ghd_red" }
+"storage.type" = { fg = "ghd_red" }
+"storage.modifier" = { fg = "ghd_yellow" }
+"tag" = { fg = "ghd_light_green" }
+"label" = { fg = "ghd_blue" }
+"type" = { fg = "ghd_red" }
+"type.builtin" = { fg = "ghd_red" }
+"namespace" = { fg = "ghd_white" }
+"variable" = { fg = "ghd_normal" } #####
+"variable.builtin" = { fg = "ghd_red" }
+"variable.parameter" = { fg = "ghd_yellow" }
+"variable.other.member" = { fg = "ghd_light_green" }
+"diff.plus" = { fg = "ghd_green" }
+"diff.delta" = { fg = "ghd_yellow" }
+"diff.minus" = { fg = "ghd_red" }
+
+# Markup
+"markup.heading" = { fg = "ghd_normal", modifiers = ["bold"] }
+"markup.list" = { fg = "ghd_normal" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "ghd_light_blue" }
+"markup.link.text" = { fg = "ghd_gray" }
+"markup.quote" = { fg = "ghd_light_green", modifiers = ["italic"] }
+"markup.raw" = { fg = "ghd_light_blue" }
+
+# Interface
+"ui.background" = { fg = "ghd_normal", bg = "ghd_default" }
+"ui.help" = { fg = "ghd_normal", bg = "ghd_dark" }
+"ui.linenr" = { fg = "ghd_gray" }
+"ui.linenr.selected" = { fg = "ghd_orange" }
+"ui.menu" = { fg = "ghd_gray", bg = "ghd_dark" }
+"ui.menu.selected" = { fg = "ghd_dark", bg = "ghd_light_blue" }
+"ui.popup" = { fg = "ghd_gray", bg = "ghd_dark" }
+"ui.selection" = { bg = "ghd_mark" }
+"ui.selection.primary" = { bg = "ghd_mark" }
+"ui.statusline" = { bg = "ghd_dark" }
+"ui.statusline.normal" = { fg = "ghd_green", bg = "ghd_list", modifiers = ["reversed"] }
+"ui.statusline.insert" = { fg = "ghd_orange", bg = "ghd_list", modifiers = ["reversed"] }
+"ui.statusline.select" = { fg = "ghd_blue", bg = "ghd_list", modifiers = ["reversed"] }
+"ui.statusline.inactive" = { fg = "ghd_gray", bg = "ghd_list" }
+"ui.text" = { fg = "ghd_normal" }
+"ui.text.focus" = { fg = "ghd_green" }
+"ui.virtual.whitespace" = { fg = "ghd_brown" }
+"ui.window" = { fg = "ghd_dark" }
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "ghd_orange", modifiers = ["bold"] }
+"ui.cursor.primary" = { modifiers = ["reversed"] }
+"ui.cursorline.primary" = { bg = "ghd_list" }
+"ui.virtual.ruler" = { bg = "ghd_list" }
+
+# Diagnostics
+"error" = { fg = "ghd_red" }
+"warning" = { fg = "ghd_yellow" }
+"info" = { fg = "ghd_blue" }
+"hint" = { fg = "ghd_white" }
+"diagnostic" = { modifiers = ["underlined"] }
+"special" = { fg = "ghd_orange" }
+
+[palette]
+ghd_default = "#0d1117"
+ghd_dark = "#010409"
+ghd_light = "#2f343b"
+ghd_mark = "#540099"
+# ghd_mark = "#390D02"
+ghd_list = "#161b22"
+ghd_normal = "#c9d1d9"
+ghd_white = "#ecf2f8"
+ghd_gray = "#8b949e"
+ghd_brown = "#8b8061"
+ghd_yellow = "#faa356"
+ghd_orange = "#ff6e39"
+ghd_red = "#fa7970"
+ghd_blue = "#1f6feb"
+ghd_light_blue = "#77bdfb"
+ghd_bright_blue = "#9dcef8"
+ghd_green = "#009602"
+ghd_light_green = "#73da7c"
+ghd_purple = "#d2a8ff"
+ghd_unknown = "#5500ff"
