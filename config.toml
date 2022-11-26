@@ -63,7 +63,7 @@ t = ":insert-output date"
 p = ":insert-output pwgen -cnys 35 1"
 c = ["kill_to_line_end", "insert_mode"]
 d = ["kill_to_line_end"]
-l = ":insert-output sh ~/Projects/twilight.zone/coding/bash/lorem.sh"
+l = ":insert-output sh ~/.config/helix/lorem.sh"
 
 [keys.normal.g]
 q = [":reflow 80", "goto_line_start"]
