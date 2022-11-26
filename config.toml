@@ -40,12 +40,13 @@ Y = ["yank_main_selection_to_clipboard"]
 0 = ["goto_line_start"]
 G = ["goto_last_line"]
 X = ["extend_line_above"]
+F = ":format"
 
-# Arrow keys nav buffers
-left = ["goto_previous_buffer"]
-down = ["goto_previous_buffer"]
-up = ["goto_next_buffer"]
-right = ["goto_next_buffer"]
+# Arrow keys nav in window mode
+left = ["jump_view_left"]
+down = ["jump_view_down"]
+up = ["jump_view_up"]
+right = ["jump_view_right"]
 
 # Ctr + Char nav in window mode
 C-h = ["jump_view_left"]
@@ -60,7 +61,6 @@ r = ":set rulers [80]"
 R = ":set rulers []"
 t = ":insert-output date"
 p = ":insert-output pwgen -cnys 35 1"
-f = ":format"
 c = ["kill_to_line_end", "insert_mode"]
 d = ["kill_to_line_end"]
 l = ":insert-output sh ~/Projects/twilight.zone/coding/bash/lorem.sh"
