@@ -41,6 +41,7 @@ Y = ["yank_main_selection_to_clipboard"]
 G = ["goto_last_line"]
 X = ["extend_line_above"]
 F = ":format"
+# w = ["select_regex", "select_all", " \f\r\v+$" "keep_primary_selection"]
 
 # Arrow keys nav in window mode
 left = ["jump_view_left"]
@@ -55,15 +56,15 @@ C-k = ["jump_view_up"]
 C-l = ["jump_view_right"]
 C-q = ["wclose"]
 
-[keys.normal._]
-# Leader (underscore) + Char
+[keys.normal.n]
+# Leader (n) + Char
 r = ":set rulers [80]"
 R = ":set rulers []"
 t = ":insert-output date"
 p = ":insert-output pwgen -cnys 35 1"
 c = ["kill_to_line_end", "insert_mode"]
 d = ["kill_to_line_end"]
-l = ":insert-output sh ~/.config/helix/lorem.sh"
+l = ":insert-output python3 ~/.config/helix/ipsum.py"
 
 [keys.normal.g]
 q = [":reflow 80", "goto_line_start"]
