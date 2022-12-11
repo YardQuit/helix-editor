@@ -9,7 +9,7 @@ scrolloff = 10
 color-modes = true
 rulers = []
 auto-completion = true
-auto-save = false
+auto-save = true
 bufferline = "always"
 
 [editor.cursor-shape]
@@ -67,8 +67,7 @@ p = ":insert-output pwgen -cnys 35 1"
 c = ["kill_to_line_end", "insert_mode"]
 d = ["kill_to_line_end"]
 l = ":insert-output python3 ~/.config/helix/ipsum.py"
-s = ":set auto-save false"
-S = ":set auto-save true"
+s = [":run-shell-command sh ~/.config/helix/auto-save.sh", ":config-reload"]
 i = ":set indent-guides.render false"
 I = ":set indent-guides.render true"
 
