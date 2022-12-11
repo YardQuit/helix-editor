@@ -69,8 +69,8 @@ l = ":insert-output python3 ~/.config/helix/ipsum.py"
 s = [":run-shell-command sh ~/.config/helix/auto-save.sh", ":config-reload"]
 i = [":run-shell-command sh ~/.config/helix/indent-guides.sh", ":config-reload"]
 [keys.normal.backspace.t]
-p = [":insert-output cat ~/.config/helix/python.template", ":set-language python"]
-c = [":insert-output cat ~/.config/helix/c.template", ":set-language c"]
+p = [":insert-output cat ~/.config/helix/template.python", ":set-language python"]
+c = [":insert-output cat ~/.config/helix/template.clang", ":set-language c"]
 
 [keys.normal.g]
 q = [":reflow 80", "goto_line_start"]
