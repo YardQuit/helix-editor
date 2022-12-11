@@ -72,13 +72,19 @@
 "ui.statusline.inactive" = { fg = "ghd_gray", bg = "ghd_list" }
 "ui.text" = { fg = "ghd_normal" }
 "ui.text.focus" = { fg = "ghd_green" }
-"ui.virtual.whitespace" = { fg = "ghd_brown" }
 "ui.window" = { fg = "ghd_dark" }
 "ui.cursor" = { modifiers = ["reversed"] }
 "ui.cursor.match" = { fg = "ghd_orange", modifiers = ["bold"] }
 "ui.cursor.primary" = { modifiers = ["reversed"] }
 "ui.cursorline.primary" = { bg = "ghd_list" }
+"ui.cursorline.secondary" = { bg = "ghd_dark" }
+"ui.cursorcolumn.primary" = { bg = "ghd_list" }
+"ui.cursorcolumn.secondary" = { bg = "ghd_dark" }
 "ui.virtual.ruler" = { bg = "ghd_list" }
+"ui.virtual.whitespace" = { fg = "ghd_brown" }
+"ui.virtual.indent-guide" = { fg = "ghd_brown" }
+"ui.gutter" = { bg = "ghd_default" }
+"ui.gutter.selected" = { bg = "ghd_dark" }
 
 # Diagnostics
 "error" = { fg = "ghd_red" }

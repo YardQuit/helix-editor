@@ -3,11 +3,14 @@ theme = "ghd"
 [editor]
 line-number = "relative"
 cursorline = true
+cursorcolumn = true
 mouse = false
 scrolloff = 10
 color-modes = true
 rulers = []
 auto-completion = true
+auto-save = false
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -27,6 +30,11 @@ space = "·"
 tab= "-"
 tabpad = "-"
 
+[editor.indent-guides]
+render = false
+character = "╎"
+skip-levels = 2
+
 [editor.lsp]
 display-messages = true
 
@@ -41,23 +49,17 @@ Y = ["yank_main_selection_to_clipboard"]
 G = ["goto_last_line"]
 X = ["extend_line_above"]
 F = ":format"
-# w = ["select_regex", "select_all", " \f\r\v+$" "keep_primary_selection"]
 
-# Arrow keys nav in window mode
+# Arrow keys nav in split-window mode
 left = ["jump_view_left"]
 down = ["jump_view_down"]
 up = ["jump_view_up"]
 right = ["jump_view_right"]
 
-# Ctr + Char nav in window mode
-C-h = ["jump_view_left"]
-C-j = ["jump_view_down"]
-C-k = ["jump_view_up"]
-C-l = ["jump_view_right"]
+# close a split-window
 C-q = ["wclose"]
 
-[keys.normal.n]
-# Leader (n) + Char
+[keys.normal.backspace]
 r = ":set rulers [80]"
 R = ":set rulers []"
 t = ":insert-output date"
@@ -65,6 +67,14 @@ p = ":insert-output pwgen -cnys 35 1"
 c = ["kill_to_line_end", "insert_mode"]
 d = ["kill_to_line_end"]
 l = ":insert-output python3 ~/.config/helix/ipsum.py"
+s = ":set auto-save false"
+S = ":set auto-save true"
+i = ":set indent-guides.render false"
+I = ":set indent-guides.render true"
+
+[keys.normal.backspace.t]
+p = [":insert-output cat ~/.config/helix/python.template", ":set-language python"]
+c = [":insert-output cat ~/.config/helix/c.template", ":set-language c"]
 
 [keys.normal.g]
 q = [":reflow 80", "goto_line_start"]
