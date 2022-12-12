@@ -40,7 +40,7 @@ display-messages = true
 
 [editor.statusline]
 left = ["mode", "spacer", "spinner", "spacer", "file-name"]
-right = ["diagnostics", "selections", "position-percentage", "position", "file-encoding", "file-type"]
+right = ["diagnostics", "selections", "position-percentage", "position", "total-line-numbers", "file-encoding", "file-type"]
 separator = "│"
 
 [keys.normal]
@@ -68,6 +68,7 @@ d = ["kill_to_line_end"]
 l = ":insert-output python3 ~/.config/helix/ipsum.py"
 s = [":run-shell-command sh ~/.config/helix/auto-save.sh", ":config-reload"]
 i = [":run-shell-command sh ~/.config/helix/indent-guides.sh", ":config-reload"]
+
 [keys.normal.backspace.t]
 p = [":insert-output cat ~/.config/helix/template.python", ":set-language python"]
 c = [":insert-output cat ~/.config/helix/template.clang", ":set-language c"]
