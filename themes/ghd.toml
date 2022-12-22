@@ -65,7 +65,7 @@
 "ui.popup" = { fg = "ghd_gray", bg = "ghd_dark" }
 "ui.selection" = { bg = "ghd_mark" }
 "ui.selection.primary" = { bg = "ghd_mark" }
-"ui.statusline" = { bg = "ghd_dark" }
+"ui.statusline" = { fg = "ghd_normal", bg = "ghd_dark" }
 "ui.statusline.normal" = { fg = "ghd_green", bg = "ghd_list", modifiers = ["reversed"] }
 "ui.statusline.insert" = { fg = "ghd_orange", bg = "ghd_list", modifiers = ["reversed"] }
 "ui.statusline.select" = { fg = "ghd_blue", bg = "ghd_list", modifiers = ["reversed"] }
@@ -80,7 +80,7 @@
 "ui.cursorline.secondary" = { bg = "ghd_dark" }
 "ui.cursorcolumn.primary" = { bg = "ghd_list" }
 "ui.cursorcolumn.secondary" = { bg = "ghd_dark" }
-"ui.virtual.ruler" = { bg = "ghd_list" }
+"ui.virtual.ruler" = { bg = "rustic_red" }
 "ui.virtual.whitespace" = { fg = "ghd_brown" }
 "ui.virtual.indent-guide" = { fg = "ghd_brown" }
 "ui.gutter" = { bg = "ghd_default" }
@@ -99,7 +99,6 @@ ghd_default = "#0d1117"
 ghd_dark = "#010409"
 ghd_light = "#2f343b"
 ghd_mark = "#540099"
-# ghd_mark = "#390D02"
 ghd_list = "#161b22"
 ghd_normal = "#c9d1d9"
 ghd_white = "#ecf2f8"
@@ -115,3 +114,7 @@ ghd_green = "#009602"
 ghd_light_green = "#73da7c"
 ghd_purple = "#d2a8ff"
 ghd_unknown = "#5500ff"
+
+crimson_red = "#9D2235"
+rustic_red = "#540b0c"
+dark_red = "#AB2328"

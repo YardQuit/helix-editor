@@ -7,9 +7,10 @@ cursorcolumn = true
 mouse = false
 scrolloff = 10
 color-modes = true
-rulers = []
+rulers = [80]
 auto-completion = true
 auto-save = true
+auto-info = true
 bufferline = "always"
 
 [editor.cursor-shape]
@@ -32,7 +33,7 @@ tabpad = "-"
 
 [editor.indent-guides]
 render = false
-character = "╎"
+character = "┊"
 skip-levels = 2
 
 [editor.lsp]
@@ -47,7 +48,7 @@ separator = "│"
 Y = ["yank_main_selection_to_clipboard"]
 0 = ["goto_line_start"]
 G = ["goto_last_line"]
-X = ["extend_line_above"]
+X = ["extend_line_above", "extend_to_line_bounds"]
 F = ":format"
 
 # Arrow keys nav in split-window mode
